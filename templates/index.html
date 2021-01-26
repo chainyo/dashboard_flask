@@ -1,0 +1,12 @@
+{% extends 'base.html'%}
+
+{% block title%} Index des Dashboards {% endblock%}
+
+{% block content%}
+<div class='container-fluid'>
+    <h2 class="index-container d-flex justify-content-center">Choisissez le dashboard à afficher :</h2>
+    <a type='button' class='btn btn-success d-flex justify-content-center' href='{{ url_for("dashboard_1") }}'>Dashboard de Paul</a>
+    <br>
+    <a type='button' class='btn btn-success d-flex justify-content-center' href='{{ url_for("dashboard_2") }}'>Dashboard de Thomas</a>
+</div>
+{% endblock %}

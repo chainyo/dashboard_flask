@@ -67,7 +67,7 @@ dash_app2.layout = html.Div(id='dashboard', children=[
                 Input('date', 'value'))
 def update_maps(date):
 
-    fig_main = Plotly.graph_map(47, 2.2, 4.5, date)
+    fig_main = Plotly.graph_map(46.5, 2.2, 4.4, date)
     fig_gua = Plotly.graph_map(16.2, -61.5, 7.5, date)
     fig_gua.update_layout(coloraxis_showscale=False)
     fig_may = Plotly.graph_map(-12.8, 45.16, 8.9, date)
